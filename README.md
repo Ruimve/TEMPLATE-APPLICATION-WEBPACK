@@ -1,5 +1,5 @@
 # TEMPLATE-APPLICATION-WEBPACK
-🌈 web 应用模板！全面好用！！🔥
+🌈 web 应用模板！全面好用！！🔥 🔥 欢迎提交 PR: [CONTRIBUTING](https://www.conventionalcommits.org)
 
 ## 基础构建
 |技术栈|描述|
