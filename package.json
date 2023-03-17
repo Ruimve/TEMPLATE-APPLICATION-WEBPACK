@@ -49,6 +49,14 @@
     "webpack-dev-server": "^4.11.1"
   },
   "jest": {
-    "testEnvironment": "jsdom"
+    "testEnvironment": "jsdom",
+    "testMatch": [
+      "**/*.spec.{js,jsx,ts,tsx}"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ]
   }
 }
