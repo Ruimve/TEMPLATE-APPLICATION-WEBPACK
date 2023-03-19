@@ -1,0 +1,264 @@
+<?xml version="1.0" ?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage lines-valid="53" lines-covered="53" line-rate="1" branches-valid="4" branches-covered="4" branch-rate="1" timestamp="1679235754287" complexity="0" version="0.1">
+  <sources>
+    <source>/Users/ruijie/Desktop/packages/TEMPLATE-APPLICATION-WEBPACK</source>
+  </sources>
+  <packages>
+    <package name="config" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="styleMock.js" filename="config/styleMock.js" line-rate="1" branch-rate="1">
+          <methods>
+          </methods>
+          <lines>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.pages" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="reducer.ts" filename="src/pages/reducer.ts" line-rate="1" branch-rate="1">
+          <methods>
+          </methods>
+          <lines>
+            <line number="5" hits="2" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.pages.Home" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="index.tsx" filename="src/pages/Home/index.tsx" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="Home" hits="4" signature="()V">
+              <lines>
+                <line number="9" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="6" signature="()V">
+              <lines>
+                <line number="11" hits="6"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="6" signature="()V">
+              <lines>
+                <line number="12" hits="6"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="1" signature="()V">
+              <lines>
+                <line number="16" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_4)" hits="1" signature="()V">
+              <lines>
+                <line number="19" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="4" branch="false"/>
+            <line number="11" hits="6" branch="false"/>
+            <line number="12" hits="6" branch="false"/>
+            <line number="14" hits="4" branch="false"/>
+            <line number="16" hits="4" branch="false"/>
+            <line number="17" hits="1" branch="false"/>
+            <line number="19" hits="4" branch="false"/>
+            <line number="20" hits="1" branch="false"/>
+            <line number="23" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="redux.ts" filename="src/pages/Home/redux.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="1" signature="()V">
+              <lines>
+                <line number="17" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="1" signature="()V">
+              <lines>
+                <line number="20" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="2" branch="false"/>
+            <line number="13" hits="2" branch="false"/>
+            <line number="18" hits="1" branch="false"/>
+            <line number="21" hits="1" branch="false"/>
+            <line number="26" hits="2" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.pages.Sponsors" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="index.tsx" filename="src/pages/Sponsors/index.tsx" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="1" signature="()V">
+              <lines>
+                <line number="5" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="1" signature="()V">
+              <lines>
+                <line number="7" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="1" signature="()V">
+              <lines>
+                <line number="8" hits="1"/>
+              </lines>
+            </method>
+            <method name="Sponsors" hits="7" signature="()V">
+              <lines>
+                <line number="16" hits="7"/>
+              </lines>
+            </method>
+            <method name="(anonymous_4)" hits="10" signature="()V">
+              <lines>
+                <line number="18" hits="10"/>
+              </lines>
+            </method>
+            <method name="(anonymous_5)" hits="10" signature="()V">
+              <lines>
+                <line number="19" hits="10"/>
+              </lines>
+            </method>
+            <method name="(anonymous_6)" hits="1" signature="()V">
+              <lines>
+                <line number="22" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_7)" hits="1" signature="()V">
+              <lines>
+                <line number="26" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_8)" hits="1" signature="()V">
+              <lines>
+                <line number="30" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="1" branch="false"/>
+            <line number="7" hits="1" branch="false"/>
+            <line number="8" hits="1" branch="false"/>
+            <line number="9" hits="1" branch="false"/>
+            <line number="17" hits="7" branch="false"/>
+            <line number="18" hits="10" branch="false"/>
+            <line number="19" hits="10" branch="false"/>
+            <line number="21" hits="7" branch="false"/>
+            <line number="22" hits="7" branch="false"/>
+            <line number="23" hits="1" branch="false"/>
+            <line number="26" hits="7" branch="false"/>
+            <line number="27" hits="1" branch="false"/>
+            <line number="30" hits="7" branch="false"/>
+            <line number="31" hits="1" branch="false"/>
+            <line number="33" hits="7" branch="false"/>
+          </lines>
+        </class>
+        <class name="redux.ts" filename="src/pages/Sponsors/redux.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="2" signature="()V">
+              <lines>
+                <line number="3" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="2" signature="()V">
+              <lines>
+                <line number="4" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="2" signature="()V">
+              <lines>
+                <line number="5" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="1" signature="()V">
+              <lines>
+                <line number="30" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_4)" hits="2" signature="()V">
+              <lines>
+                <line number="34" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_5)" hits="2" signature="()V">
+              <lines>
+                <line number="36" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_6)" hits="1" signature="()V">
+              <lines>
+                <line number="39" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_7)" hits="1" signature="()V">
+              <lines>
+                <line number="43" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="2" branch="false"/>
+            <line number="4" hits="2" branch="false"/>
+            <line number="5" hits="2" branch="false"/>
+            <line number="6" hits="2" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="7" hits="1" branch="false"/>
+            <line number="9" hits="1" branch="false"/>
+            <line number="13" hits="1" branch="false"/>
+            <line number="21" hits="2" branch="false"/>
+            <line number="26" hits="2" branch="false"/>
+            <line number="31" hits="1" branch="false"/>
+            <line number="35" hits="2" branch="false"/>
+            <line number="37" hits="2" branch="false"/>
+            <line number="40" hits="1" branch="false"/>
+            <line number="41" hits="1" branch="false"/>
+            <line number="44" hits="1" branch="false"/>
+            <line number="49" hits="2" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.pages.Test" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="render.tsx" filename="src/pages/Test/render.tsx" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="6" signature="()V">
+              <lines>
+                <line number="14" hits="6"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="6" signature="()V">
+              <lines>
+                <line number="21" hits="6"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="2" branch="false"/>
+            <line number="19" hits="6" branch="false"/>
+            <line number="21" hits="6" branch="false"/>
+            <line number="22" hits="6" branch="false"/>
+            <line number="29" hits="6" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.redux" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="hook.ts" filename="src/redux/hook.ts" line-rate="1" branch-rate="1">
+          <methods>
+          </methods>
+          <lines>
+            <line number="4" hits="2" branch="false"/>
+            <line number="5" hits="2" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

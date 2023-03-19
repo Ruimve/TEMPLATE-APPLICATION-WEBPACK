@@ -16,15 +16,19 @@ interface Props {
 function Sponsors(props: Props) {
   const { name } = props;
   const data = useAppSelector(state => state.sponsorsReducer.data);
-  const loading = useAppSelector(state => state.sponsorsReducer.loading);
+  const status = useAppSelector(state => state.sponsorsReducer.status);
 
   const dispatch = useAppDispatch();
   const handleQuery = () => {
     dispatch(changeDataAsync({ a: 'my', b: 18 }));
   }
 
-  const handleStatus = () => {
-    dispatch(queryData());
+  const handleSuccessStatus = () => {
+    dispatch(queryData('success'));
+  }
+
+  const handleFailStatus = () => {
+    dispatch(queryData('fail'));
   }
   return <div className="sponsors">
     <div className="sponsors-name">
@@ -37,9 +41,12 @@ function Sponsors(props: Props) {
       </button>
     </div>
     <div className="sponsors-loading">
-      {String(loading)}
-      <button onClick={handleStatus}>
-        状态
+      {String(status)}
+      <button onClick={handleSuccessStatus}>
+        状态-成功
+      </button>
+      <button onClick={handleFailStatus}>
+        状态-失败
       </button>
     </div>
   </div>

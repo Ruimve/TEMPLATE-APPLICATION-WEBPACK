@@ -1,9 +1,13 @@
-import { createSlice, PayloadAction, createAsyncThunk } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction, createAsyncThunk, isRejected } from '@reduxjs/toolkit';
 
-export const queryData = createAsyncThunk("sponsors/queryData", async () => {
-  const response = await new Promise<string>((resolve) => {
+export const queryData = createAsyncThunk("sponsors/queryData", async (type: 'success' | 'fail') => {
+  const response = await new Promise<string>((resolve, reject) => {
     setTimeout(() => {
-      resolve('成功');
+      if(type === 'success'){
+        resolve('成功');
+      }else{
+        reject('失败');
+      }
     }, 2000);
   });
   return response;
@@ -11,12 +15,12 @@ export const queryData = createAsyncThunk("sponsors/queryData", async () => {
 
 interface State {
   data: { a: string, b: number };
-  loading: boolean;
+  status: 'loading' | 'success' | 'fail';
 }
 
 const initialState: State = {
   data: { a: '观众小明', b: 18 },
-  loading: false
+  status: 'loading'
 }
 
 export const sponsorsSlice = createSlice({
@@ -30,13 +34,14 @@ export const sponsorsSlice = createSlice({
   extraReducers(builder) {
     builder
       .addCase(queryData.pending, (state) => {
-        state.loading = true;
+        state.status = 'loading';
       })
-      .addCase(queryData.fulfilled, (state) => {
-        state.loading = false;
+      .addCase(queryData.fulfilled, (state, action) => {
+        console.log(action.payload)
+        state.status = 'success';
       })
       .addCase(queryData.rejected, (state) => {
-        state.loading = false;
+        state.status = 'fail';
       })
   },
 })
