@@ -1,6 +1,8 @@
 import { changeAge, changePerson } from './redux';
 import { useAppSelector, useAppDispatch } from '../../redux/hook';
 
+import styles from './index.module.scss';
+
 interface Props {
   name: string;
 }
@@ -18,15 +20,15 @@ function Home(props: Props) {
     dispatch(changeAge(Number(e.target.value)));
   }
 
-  return <div className="home">
-    <div className="home-name">
+  return <div className={styles['home']}>
+    <div className={styles["home-name"]}>
       {name}
     </div>
-    <div className="home-person">
+    <div className={styles["home-person"]}>
       姓名: {person}
       <input type="text" onChange={handleChangeName} />
     </div>
-    <div className="home-age">
+    <div className={styles["home-age"]}>
       年龄: {age}
       <input type="text" onChange={handleChangeAge} />
     </div>

@@ -8,6 +8,10 @@
 |**react**|前端框架|
 |**react-router**|路由|
 |**@reduxjs/toolkit、react-redux**|状态管理|
+
+## 样式处理
+|技术栈|描述|
+|:---:|:--:|
 |**sass**|css预编译|
 
 ## 代码规范

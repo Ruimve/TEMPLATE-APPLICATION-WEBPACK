@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development',
@@ -13,13 +14,21 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index.[contenthash].js'
+    filename: 'js/[name].[contenthash:8].js'
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx']
   },
   module: {
     rules: [
+      {
+        test:/\.(css|scss)/,
+        use:[
+          MiniCssExtractPlugin.loader,
+          'css-loader', 
+          'sass-loader'
+        ]
+      },
       {
         test: /\.tsx?$/,
         use: ['ts-loader']
@@ -32,6 +41,9 @@ module.exports = {
       template: './template/index.html',
       filename: 'index.html',
       inject: 'body'
+    }),
+    new MiniCssExtractPlugin({
+      filename:'css/[name].[contenthash:8].css'
     })
   ]
 }
