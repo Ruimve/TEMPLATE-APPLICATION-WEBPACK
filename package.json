@@ -1,6 +1,6 @@
 {
   "name": "template-application-webpack",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "🌈 web 应用模板！全面好用！！🔥",
   "main": "index.js",
   "scripts": {
