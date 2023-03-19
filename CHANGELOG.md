@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/Ruimve/TEMPLATE-APPLICATION-WEBPACK/compare/v1.0.2...v1.0.3) (2023-03-19)
+
+
+### Performance Improvements
+
+* sass ([7d6d18a](https://github.com/Ruimve/TEMPLATE-APPLICATION-WEBPACK/commit/7d6d18a6287f05184c9a5be6128d54eb242cdfcb))
+
 ## 1.0.2 (2023-03-17)
 
 
